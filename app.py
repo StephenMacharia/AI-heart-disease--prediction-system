@@ -11,9 +11,9 @@ CORS(app)
 # Load trained model
 model = joblib.load("Datasets/heart_cleveland_upload.csv")
 
-@app.route("/")
-def home():
-    return render_template("index.html")  # Optional HTML form
+# @app.route("/")
+# def home():
+#     return render_template("index.html")  # Optional HTML form
 
 @app.route("/predict", methods=["POST"])
 def predict():
