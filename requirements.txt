@@ -1,0 +1,19 @@
+# Core libraries
+numpy>=1.21
+pandas>=1.3
+
+# Machine learning
+scikit-learn>=1.0
+xgboost>=1.6  # only if you’re using it
+
+# Model serialization
+joblib>=1.1  # or use pickle (built-in)
+
+# Web framework
+flask>=2.0      # or fastapi>=0.85 and uvicorn>=0.18 if using FastAPI
+
+# Production server
+gunicorn>=20.1
+
+# Optionally, enabling CORS for API use
+flask-cors>=3.0
