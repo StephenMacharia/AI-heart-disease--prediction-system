@@ -24,5 +24,4 @@ def predict():
         return jsonify({"prediction": int(prediction)})
     except Exception as e:
         return jsonify({"error": str(e)}), 400
-
- app.run(host="0.0.0.0", port=10000, debug=True)
+app.run(host="0.0.0.0", port=10000, debug=True)
